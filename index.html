@@ -23,7 +23,7 @@
 <body>
 
   <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center" style="max-width: 1400px;">
+    <div class="container d-flex align-items-center position-relative topnav" style="max-width: 1400px;" id="mobile-responsive">
       <h1 class="logo"><a href="index.html">RECRUIIT</a></h1>
       <nav id="navbar" class="navbar">
         <ul>
@@ -36,17 +36,17 @@
       </nav>
         <div class="navbar-right" style="margin-left: auto;">
           <a href="#" class="sign-in">Sign In <i class="bi bi-chevron-right"></i></a>
+          <button class="bi bi-list mobile-nav-icon"  onclick="myFunction()"></button>
         </div>
     </div>
   </header>
 
-  <section id="hero" class="d-flex align-items-center">
+  <section id="hero">
     <div class="position-relative w-100">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-5 ms-auto d-flex flex-column justify-content-between pt-4 pt-lg-0">
-            <div class="py-4"></div>
-            <a href="#" class="free-trial d-flex justify-content-between">Try For Free Now!<i class="bi bi-chevron-right"></i></a>
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-12 hero-intro">
+            <a href="#" class="free-trial">Try For Free Now!<i class="bi bi-chevron-right"></i></a>
             <h1>Build a great company with modern HR, payrolls, insurance and benefits </h1>
             <form class="getstarted">
               <i class="bi bi-at at-icon"></i>
@@ -55,7 +55,7 @@
             </form>
             <h4>Our plans were build to fit your unique needs. Streamline, onboarding, benefits, payroll, PTO, and more with our simple, intuitive platform.</h4>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6 col-md-12">
             <div class="position-relative">
               <img src="assets/img/Group 145.png" class="img-fluid" alt="">
               <img src="assets/img/Component 17 – 2.png" class="img-fluid-1" alt="">
@@ -69,19 +69,19 @@
 
   
   <section class="features-trial">
-    <div class="container">
+    <div class="container-lg">
       <div class="row">
-        <div class="col-4">
+        <div class="col-md-4">
           <div class="feature-trial-point">
             <i class="bi bi-check"></i><h4>Free 14-day Demo</h4>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4">
           <div class="feature-trial-point">
             <i class="bi bi-check"></i><h4>No Credit Card Needed</h4>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4">
           <div class="feature-trial-point">
             <i class="bi bi-check"></i><h4>No Setup</h4>
           </div>
@@ -94,7 +94,7 @@
     <div class="container">
       <h1>Our Services</h1>
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="service-card">
             <div class="border-dot">
               <div class="img-pixel-box">
@@ -108,7 +108,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="service-card">
             <div class="border-dot">
               <div class="img-pixel-box">
@@ -122,7 +122,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 col-md-3">
           <div class="service-card">
             <div class="border-dot">
               <div class="img-pixel-box">
@@ -136,7 +136,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 col-md-3">
           <div class="service-card">
             <div class="border-dot">
               <div class="img-pixel-box">
@@ -155,23 +155,23 @@
   </section>
 
   <section class="hr-section">
-    <div class="container">
+    <div class="container-lg">
       <div class="section-intro">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <h1 class="section-heading">HR</h1>
             <h4 class="section-minor-heading">Manage your<br> people with ease.</h4>
           </div>
-          <div class="col-md-8">
+          <div class="col-sm-8">
             <p>Recruiit has all the HR tools that makes people managing your people easy, from streamlined onboarding and easy PTO tracking to org charts, performance reviews, and so much more.</p>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-sm-5">
           <img src="assets/img/Component 8 – 2.png" class="img-component-1">
         </div>
-        <div class="col-md-7">
+        <div class="col-sm-7">
           <img src="assets/img/Component 9 – 2.png" class="img-component-2">
           <img src="assets/img/Component 7 – 2.png" class="img-component-3">
         </div>
@@ -182,7 +182,7 @@
 
   <div class="payroll-section_before"></div>
   <section class="payroll-section">
-    <div class="container">
+    <div class="container-lg">
       <div class="row">
         <div class="col-md-4">
           <div class="section-intro">
@@ -201,11 +201,11 @@
 
   <section class="payroll-detail-section">
     <div class="row align-items-center ">
-      <div class="col-md-4 position-relative mr-auto">
+      <div class="col-lg-4 col-md-5 position-relative mr-auto pb-5">
         <div class="circle-img-relative">
           <img src="assets/img/pixeltrue-payment-1.png" class="pixeltrue-payment"></div>
       </div>
-      <div class="col-md-5 mx-auto">
+      <div class="col-lg-5 col-md-5 mx-auto">
         <div class="payroll-points">
           <img src="assets/img/star-shape-checkmark.png" class="star-shape-checkmark">
           <h4>Compilance, accuracy,<br> and piece of mind.</h4>
@@ -244,18 +244,18 @@
 
   <section class="features-subscription">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
+      <div class="row align-items-end">
+        <div class="col-4">
           <div class="feature-pill pill-1">
             <p>A business where talented people want to work.</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-4">
           <div class="feature-pill pill-2">
             <p>A healthy team can better support your business.</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-4">
           <div class="feature-pill pill-3">
             <p>Our benefits are designed to be accessible for all.</p>
           </div>
@@ -286,14 +286,12 @@
 
   <section class="hr-features">
     <div class="container">
+      <div class="section-intro">
+        <h1 class="section-heading">A Complete HR Platform.</h1>
+        <p>Managing your people is complex. The recuiit platform helps you in the area that matters the most.</p>
+      </div>
       <div class="row align-items-center">
-        <div class="col-md-12">
-          <div class="section-intro">
-            <h1 class="section-heading">A Complete HR Platform.</h1>
-            <p>Managing your people is complex. The recuiit platform helps you in the area that matters the most.</p>
-          </div>
-        </div>
-        <div class="col-md-7">
+        <div class="col-lg-7 col-md-7 col-sm-12">
           <ul class="hr-point-features">
             <li><span>Improve employee experience</span></li>
             <li><span>Hire and retail top talent</span></li>
@@ -302,7 +300,7 @@
             <li><span>Reduce errors</span></li>
           </ul>
         </div>
-        <div class="col-md-5">
+        <div class="col-lg-5 col-md-5 col-sm-12">
           <img src="assets/img/pixeltrue-data-analyse-1.png" class="img-component-1">
         </div>
       </div>
@@ -311,7 +309,7 @@
 
   <section class="getting-started-section">
     <div class="getting-started-section_before"></div>
-    <div class="container">
+    <div class="container-lg">
       <div class="row align-items-end">
         <div class="col-md-6">
           <div class="section-intro">
@@ -331,36 +329,93 @@
   </section>
 
   <section class="client-testimonals">
-    <div class="container">
+    <div class="container sl-cont position-relative">
       <div class="section-intro">
         <h1 class="section-heading">Client Testimonals</h1>
       </div>
-      <div class="slide-container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="slide-left"><i class="bi bi-chevron-left"></i></div>
-            <div class="slide-right"><i class="bi bi-chevron-right"></i></div>
-            <img src="assets/img/81.png" class="w-100">
-          </div>
-          <div class="col-md-8">
-            <div class="slide-desc">
-              <p>When we onboard our employee, its really quick and easy. We got to focus on making sure that they're okay and happy and being introduced to the company.</p>
-              <div class="d-flex -align-items-center justify-content-between">
-                <div><b>~Ashley Landazo</b><br>
-                <small>Manager</small>
+      <div id="testimonial-slide" class="slide-container carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#testimonial-slide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#testimonial-slide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#testimonial-slide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-md-6">
+                <img src="assets/img/81.png" class="w-100">
+              </div>
+              <div class="col-lg-8 col-md-6">
+                <div class="slide-desc">
+                  <p>When we onboard our employee, its really quick and easy. We got to focus on making sure that they're okay and happy and being introduced to the company.</p>
+                  <div class="d-flex -align-items-center justify-content-between">
+                    <div><b>~Ashley Landazo</b><br>
+                    <small>Manager</small>
+                    </div>
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
                 </div>
-                <div class="rating">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-md-6">
+                <img src="assets/img/81.png" class="w-100">
+              </div>
+              <div class="col-lg-8 col-md-6">
+                <div class="slide-desc">
+                  <p>When we onboard our employee, its really quick and easy. We got to focus on making sure that they're okay and happy and being introduced to the company.</p>
+                  <div class="d-flex -align-items-center justify-content-between">
+                    <div><b>~Ashley Landazo</b><br>
+                    <small>Manager</small>
+                    </div>
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-md-6">
+                <img src="assets/img/82.png" class="w-100">
+              </div>
+              <div class="col-lg-8 col-md-6">
+                <div class="slide-desc">
+                  <p>When we onboard our employee, its really quick and easy. We got to focus on making sure that they're okay and happy and being introduced to the company.</p>
+                  <div class="d-flex -align-items-center justify-content-between">
+                    <div><b>~Ashley Landazo</b><br>
+                    <small>Manager</small>
+                    </div>
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <button type"button" data-bs-target="#testimonial-slide" data-bs-slide="prev" class="slide-left"><i class="bi bi-chevron-left"></i></button>
+      <button type"button" data-bs-target="#testimonial-slide" data-bs-slide="next" class="slide-right"><i class="bi bi-chevron-right"></i></button>
     </div>
   </section>
 
@@ -368,7 +423,7 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 pb-5">
           <h4>All-in-one platform</h4>
           <a href="#" class="nav-link">Payroll</a>
           <a href="#" class="nav-link">Employee Benefits</a>
@@ -382,7 +437,7 @@
           <a href="#" class="nav-link">Gusto Wallet</a>
           <a href="#" class="nav-link">Gusto Partner Offers</a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 pb-5">
           <h4>Tools</h4>
           <a href="#" class="nav-link">Small Business Financial Reliefs</a>
           <a href="#" class="nav-link">Employer tax calculator</a>
@@ -392,7 +447,7 @@
           <a href="#" class="nav-link">Small buiness guides</a>
           <h4 class="mt-3">Contact - <span class="text-danger">001256789</span></h4>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 pb-5">
           <h4>About Gusto</h4>
           <a href="#" class="nav-link">About</a>
           <a href="#" class="nav-link">Careers — <span class="text-danger">We're Hiring</span></a>
