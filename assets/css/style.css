@@ -1127,7 +1127,7 @@ footer .nav-link {
   .resp {
     background: rgb(0, 50, 116);
   }
-  .resp ul {
+  .resp ul {\
     display: block;
     position: fixed;
     background: rgb(0, 50, 116);
