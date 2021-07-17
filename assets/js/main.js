@@ -1,19 +1,17 @@
 
 window.onscroll = function() {scrollFunction()};
-
+const header = document.getElementById("header");
 function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 80) {
-    document.getElementById("header").style.backgroundColor = "#003274";
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 80 || header.classList.contains('resp')) {
+    header.style.backgroundColor = "#003274";
   } else {
-    document.getElementById("header").style.backgroundColor = "transparent";
+    header.style.backgroundColor = "transparent";
   }
 }
 
-function myFunction() {
-  var x = document.getElementById("mobile-responsive");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+
+
+function myFunction(e) {
+  header.classList.toggle('resp');
+  scrollFunction();
 }

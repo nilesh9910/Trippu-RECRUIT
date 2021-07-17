@@ -122,6 +122,8 @@ body {
     margin-left: 1rem;
     padding: 0.5rem;
     color: #fff;
+    border: none;
+    background-color: inherit;
     display: none;
   }
 
@@ -1122,7 +1124,28 @@ footer .nav-link {
   .hr-features .hr-point-features li span {
     font-size: 21px;
   }
+  .resp {
+    background: rgb(0, 50, 116);
+  }
+  .resp ul {
+    display: block;
+    position: fixed;
+    background: rgb(0, 50, 116);
+    width: 100%;
+    top: 90px;
+    left: 0px;
+  }
+  .resp #navbar {
+    display: contents;
+  }
+  .resp ul li {
+    align-items: center;
+  }
+
 } 
+
+
+
 
 @media only screen and (max-width: 768px) {
   
